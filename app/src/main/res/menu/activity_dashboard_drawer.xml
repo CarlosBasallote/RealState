@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Viviendas" />
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_keyboard_tab_black_24dp"
+            android:title="Iniciar Sesión" />
+        <item
+            android:id="@+id/nav_viviendas"
+            android:icon="@drawable/ic_vpn_key_black_24dp"
+            android:title="Mis Viviendas" />
+        <item
+            android:id="@+id/nav_fav"
+            android:icon="@drawable/ic_star_black_24dp"
+            android:title="Viviendas Favoritas" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_subdirectory_arrow_left_black_24dp"
+            android:title="Cerrar Sesion" />
+    </group>
+
+</menu>

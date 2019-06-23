@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.carlosbt.carlosbtrealstate.ui.AddPropertyActivity">
+
+    <android.support.constraint.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <EditText
+            android:id="@+id/addZipcode"
+            android:layout_width="163dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:background="#f1fdf2"
+            android:ems="10"
+            android:hint="Código postal"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textColorHint="#2196F3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addProvince" />
+
+        <ImageView
+            android:id="@+id/buttonCancel"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_close_blue_24dp" />
+
+
+        <TextView
+            android:id="@+id/textViewSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="Nueva vivienda"
+            android:textColor="@color/ic_launcher_background"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/addTitle"
+
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="460dp"
+            android:background="#f1fdf2"
+
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:gravity="start"
+            android:hint="Titulo"
+            android:inputType="textPersonName"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+
+
+            android:paddingRight="15dp"
+
+            android:paddingBottom="5dp"
+            android:textAlignment="textStart"
+
+            android:textColor="@android:color/black"
+            android:textColorHint="#2196F3"
+            app:layout_constraintBottom_toBottomOf="@+id/nestedScrollView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSize"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="NotSibling" />
+
+        <EditText
+            android:id="@+id/addPrice"
+            android:layout_width="127dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="11dp"
+            android:background="#f1fdf2"
+            android:ems="10"
+            android:hint="Precio"
+            android:inputType="numberDecimal"
+            android:textColor="#000000"
+            android:textColorHint="#2196F3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addRooms" />
+
+        <EditText
+            android:id="@+id/addSize"
+            android:layout_width="163dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:background="#f1fdf2"
+            android:ems="10"
+            android:hint="metros^²"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textColorHint="#2196F3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addProvince" />
+
+        <RadioGroup
+            android:id="@+id/radioCategorias"
+            android:layout_width="132dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:padding="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/addDescription">
+
+            <RadioButton
+                android:id="@+id/radioCompra"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:text="Compra"
+                android:textColor="#2397F3" />
+
+            <RadioButton
+                android:id="@+id/radioAlquiler"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:text="Alquiler"
+                android:textColor="#2397F3" />
+
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/buttonAddProperty"
+            android:layout_width="261dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/buttonround"
+            android:drawableRight="@drawable/ic_done_black_24dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="R e g i s t r a r"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.417"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addZipcode" />
+
+        <EditText
+            android:id="@+id/addDescription"
+            android:layout_width="384dp"
+            android:layout_height="79dp"
+
+
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+
+            android:layout_marginEnd="8dp"
+            android:background="#f1fdf2"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:gravity="start"
+            android:hint="Descripción"
+            android:inputType="textPersonName"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/black"
+            android:textColorHint="#2196F3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addTitle" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/addPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/ic_launcher_background"
+            android:clickable="true"
+            android:visibility="visible"
+            app:backgroundTint="#2196F3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_add_a_photo_black_24dp" />
+
+        <EditText
+            android:id="@+id/addRooms"
+            android:layout_width="189dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="8dp"
+            android:background="#f1fdf2"
+            android:ems="10"
+            android:hint="Habitaciones"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textColorHint="#2196F3"
+            app:layout_constraintTop_toBottomOf="@+id/addDescription"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="37dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="11dp"
+            android:background="#f1fdf2"
+            app:layout_constraintStart_toEndOf="@+id/addPrice"
+            app:layout_constraintTop_toBottomOf="@+id/addRooms"
+            app:srcCompat="@drawable/ic_euro_symbol_black_24dp" />
+
+        <EditText
+            android:id="@+id/addCity"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="#f1fdf2"
+            android:hint="Ciudad"
+            android:textColor="#000000"
+            android:textColorHint="#2196F3"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addAddress" />
+
+        <EditText
+            android:id="@+id/addProvince"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="#f1fdf2"
+            android:hint="Provincia"
+            android:textColor="#000000"
+            android:textColorHint="#2196F3"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addCity" />
+
+        <EditText
+            android:id="@+id/addAddress"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:background="#f1fdf2"
+            android:hint="Dirección"
+            android:textColor="#000000"
+            android:textColorHint="#2196F3"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/addCity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addPrice" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="28dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/addSize"
+            app:layout_constraintHorizontal_bias="0.48"
+            app:layout_constraintStart_toEndOf="@+id/addZipcode"
+            app:layout_constraintTop_toBottomOf="@+id/addProvince"
+            app:srcCompat="@drawable/ic_location_on_black_24dp" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>
